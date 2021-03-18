@@ -1,0 +1,75 @@
+MySQL数据库：
+
+图书表：
+    create table t_book(
+    	`id` int(11) primary key auto_increment, 	## 主键
+    	`name` varchar(50) not null,				## 书名
+    	`author` varchar(50) not null,				## 作者
+    	`price` decimal(11,2) not null,				## 价格
+    	`sales` int(11) not null,					## 销量
+    	`stock` int(11) not null,					## 库存
+    	`img_path` varchar(200) not null			## 书的图片路径
+    );
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , 'Java从入门到精通' , '明日科技' , 69.80 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , 'Java核心技术' , '凯·S.霍斯特曼' , 149.00 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , '零基础学Java' , '明日科技' , 69.80 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , 'Java编程思想' , 'Bruce Eckel' , 108.00 , 100 , 100 , 'static/img/default.jpg');
+
+
+    VALUES(NULL , 'Java并发编程实战' , 'Brian Goetz' , 69.00 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , 'Java语言程序设计与数据结构' , '梁勇' , 99.00 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , 'Java从入门到项目实战' , '明日科技' , 69.80 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , 'Java从入门到精通' , '李兴华' , 99.80 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , '阿里巴巴Java开发手册' , '杨冠宝' , 45.00 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , 'Java并发编程之美' , '翟陆续' , 89.00 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , 'Java并发实现原理' , '余春龙' , 89.00 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , '数据结构与算法分析' , '马克·艾伦·维斯' , 69.00 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , 'Java从入门到精通' , '张玉宏' , 79.80 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , 'Java网络编程' , '哈诺德' , 78.00 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , 'Java程序员面试笔试宝典' , '何昊' , 48.80 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , 'Java Web从入门到精通' , '明日科技' , 79.80 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , 'Java Web应用开发技术' , '肖海鹏' , 69.00 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , 'Java Web编程技术' , '陈香凝' , 46.00 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , 'Java Web程序设计' , '郭克华' , 49.80 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , '高性能MySQL' , '施瓦茨' , 128.00 , 100 , 100 , 'static/img/default.jpg');
+
+    INSERT INTO t_book(`id` , `name` , `author` , `price` , `sales` , `stock` , `img_path`)
+    VALUES(NULL , 'MySQL高可用实践' , '王雪迎' , 99.00 , 100 , 100 , 'static/img/default.jpg');

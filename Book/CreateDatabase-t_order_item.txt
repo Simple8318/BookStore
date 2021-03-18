@@ -1,0 +1,11 @@
+订单项:
+
+    create table t_order_item(
+        `id` int primary key auto_increment,
+        `name` varchar(30) not null,		##商品名
+        `price` decimal(11,2),			##商品单价
+        `total_money` decimal(11,2),		##商品总金额
+        `count` int not null,			##商品数量
+        `order_id` varchar(50) not null,	##订单号
+        foreign key (`order_id`) references t_order(`order_id`)
+    );
